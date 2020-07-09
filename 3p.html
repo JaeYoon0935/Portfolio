@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#f1f1f1">
+<div>
+    <p class="project_name"><strong>- Expericence</strong> 지진 피해방지 IOT 시스템</p>
+
+  <table class="three_table1" bgcolor="#d8d8d8">
+    <tr class="tr_border">
+      <th>문제정의</th>
+    </tr>
+    <tr>
+      <td style="padding:6px">지진 발생시 전기합선 사고와 같은 2차피해를 최소화 하고자 함</td>
+    </tr>
+  </table>
+
+  <table class="three_table2" bgcolor="#d8d8d8">
+    <tr class="tr_border">
+      <th>구현방식</th>
+    </tr>
+    <tr>
+      <td style="padding:6px">모형물에 기울기 센서와 진동감지 센서를 부착하여
+      지진을 구현하고 블루투스와 부저 및 LED를 활용해 대응책을 구현함</td>
+    </tr>
+  </table>
+
+  <table class="three_table3" bgcolor="#d8d8d8">
+    <tr class="tr_border">
+      <th>구현내용</th>
+    </tr>
+    <tr>
+      <td style="padding:6px">지진 발생시 모형물의 전원을 차단하고 지진강도에 따라
+      순차적으로 경고음 알람 - 전력차단 및 비상등 작동 - 긴급메시지 전송 순으로 작동</td>
+    </tr>
+  </table>
+
+  <table class="three_table4" bgcolor="#d8d8d8">
+    <tr class="tr4_border">
+      <th>제어</th>
+    </tr>
+    <tr>
+      <td style="padding:6px">CodeVision AVR프로그램을 통하여
+        마이크로프로세서(ATEMEGA8535)제어</td>
+    </tr>
+  </table>
+</div>
+<p style="position:absolute; left:850px; top: 400px;">
+(회로도 참고 후 pcb 기판에 ATEMEGA8535칩과 부품을 사용하여 모듈 직접 제작)</p>
+  <div style="position:absolute; 	font-size: 18px; left:130px; top: 460px;" class=three_grid>
+    <strong style="margin-right:23px">
+    <p> 제어코드 요약</p>
+    <div style="border-left: 1px solid black; font-size: 18px; padding: 0px 0px 0px 60px;">
+      <p>외부 인터럽트를 활용하여 센서 값 카운트 및 블루투스 제어</p><br>
+      <p>경고음 알림(3 카운트) ->전력차단 및 비상등(LED)작동 (20카운트 이상)-></p>
+      <p>긴급 메시지 전송(20 카운트 이상 및 기울기 센서 값 카운트, puts(tx_data)를 통해 데이터)</p>
+      <p>전송 명령 후 미리 선언 된 문구를 앱 인벤터를 활용해 휴대폰으로 전송</p>
+      </strong>
+    </div>
+
+    <div>
+    <a class="three_Prev" href="2p.html">Prev</a>
+    </div>
+    <div>
+    <a class="three_Next" href="4p.html">Next</a>
+  </div>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#f1f1f1">
+<div>
+    <p class="project_name"><strong>- Expericence</strong> 시각장애인을 위한 교통시스템</p>
+
+  <table class="three_table1" bgcolor="#d8d8d8">
+    <tr class="tr_border">
+      <th>문제정의</th>
+    </tr>
+    <tr>
+      <td style="padding:6px">사고율이 높고 교통체계가 미흡한 곳에 시각장애인들의 교통편의를 위한
+      장치 마련</td>
+    </tr>
+  </table>
+
+  <table class="three_table2" bgcolor="#d8d8d8">
+    <tr class="tr_border">
+      <th>구현방식</th>
+    </tr>
+    <tr>
+      <td style="padding:6px">횡단보도 모형의 우측에 홈을 설치하고 시작점과 끝점에 적외선 센서와
+      장애물 활용을 위해 서보모터를 설치함</td>
+    </tr>
+  </table>
+
+  <table class="three_table3" bgcolor="#d8d8d8">
+    <tr class="tr_border">
+      <th>구현내용</th>
+    </tr>
+    <tr>
+      <td style="padding:6px">횡단보도 시작점 홈의 적외선 센서에 지팡이가 감지되면, 끝점 홈에 지팡이가
+      감지되기 전까지 초록불이 유지되고 이후 끝점 홈에 감지되면 정상신호로 복귀</td>
+    </tr>
+  </table>
+
+  <table class="three_table4" bgcolor="#d8d8d8">
+    <tr class="tr4_border">
+      <th>제어</th>
+    </tr>
+    <tr>
+      <td style="padding:6px">CodeVision AVR프로그램을 통하여
+        마이크로프로세서(ATEMEGA128)제어</td>
+    </tr>
+  </table>
+</div>
+ <p style="position:absolute; left:1250px; top: 400px;">(ATEMEGA128 모듈 활용)</p>
+  <div style="position:absolute; 	font-size: 18px; left:130px; top: 460px;" class=three_grid>
+    <strong style="margin-right:23px">
+    <p> 제어코드 요약</p>
+
+    <div style="border-left: 1px solid black; font-size: 18px; padding: 0px 0px 0px 60px;">
+      <p>메인함수 무한루프를 통해 기본 신호 작동 및 서보모터 장애물(빨간불UP, 초록불 DOWN 작동)</p><br>
+      <p>*시스템 작동 시</p>
+      <p>시작점 적외선 센서 값 입력 -> 인터럽트를 사용해 신호 통제 및 부저 알람</p>
+      <p>끝점 적외선 센서 값 입력 -> 메인함수 무한루프(정상신호)로 복귀</p>
+      </strong> </div>
+
+
+    <div>
+    <a class="three_Prev" href="4p.html">Prev</a>
+    </div>
+    <div>
+    <a class="three_Next" href="6p.html">Next</a>
+    </div>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* 1p. html 시작 */
+
+#next{
+	font-size: 25px;
+	text-align: left;
+	margin: 600px 0px 0px 0px;
+	<!-- 전체 홈페이지 기준으로 600px 0px 0px 1200px 나오면 모은 페이지 동일함-->
+}
+
+#right{
+	border-left: 1.5px solid gray;
+	padding: 0px 0px 0px 50px;
+}
+
+#grid {
+	display:grid;
+	grid-template-columns: 500px 700px auto;
+}
+
+.one{
+	font-size: 19px;
+	text-align: left;
+}
+
+
+/* 2p. html 시작 */
+
+
+.two_text{
+	font-size: 90px;
+	text-align: center;
+	margin-top: 200px;
+	margin-left: 300px;
+}
+
+.two_Prev{
+   font-size: 25px;
+	 text-align: left;
+	 position:absolute;
+	 top:600px;
+
+}
+
+.two_Next{
+	font-size: 25px;
+	text-align: left;
+	position:absolute;
+  top:600px;
+}
+
+.two_grid{
+	display:grid;
+  grid-template-columns: 1200px 100px auto;
+}
+
+
+/* 3p. html 시작 */
+
+
+.project_name{
+	font-size: 25px;
+}
+
+.three_grid{
+	display: grid;
+	grid-template-columns: 100px 1000px 100px 100px;
+}
+
+.tr_border{
+
+	padding: 3px;
+	height: 50px;
+	background-color:#000033 ;
+	color:white;
+}
+
+.tr4_border{
+	padding: 3px;
+	height: 50px;
+	background-color:	#99cc00 ;
+	color:white;
+}
+
+.three_table1{
+	border-collapse: collapse;
+	font-size: 19px;
+	position:absolute;
+	text-align: center;
+	left:60px;
+ 	top:160px;
+	width: 200px;
+	height: 250px;
+}
+
+.three_table2{
+	border-collapse: collapse;
+	font-size: 19px;
+	position:absolute;
+	text-align: center;
+	left:260px;
+	top:160px;
+	width: 380px;
+	height: 250px;
+	margin-left: 50px;
+}
+
+.three_table3{
+	border-collapse: collapse;
+	font-size: 19px;
+	position:absolute;
+	text-align: center;
+	left:690px;
+	top:160px;
+	width: 380px;
+	height: 250px;
+	margin-left: 10px;
+}
+
+.three_table4{
+	border-collapse: collapse;
+	font-size: 19px;
+	position:absolute;
+	text-align: center;
+	left:1080px;
+	top:160px;
+	width: 380px;
+	height: 250px;
+	margin-left: 10px;
+}
+
+.three_Prev{
+   font-size: 25px;
+	 text-align: left;
+	 position:absolute;
+   top:180px;
+
+}
+
+.three_Next{
+	font-size: 25px;
+	text-align: left;
+	position:absolute;
+  top:180px;
+}
+
+/* 4p. html 시작 */
+
+.four_grid_up{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position:relative;
+  top:30px;
+}
+
+.four_grid_down{
+	display: grid;
+	grid-template-columns: 1fr 0.4fr 0.6fr;
+	position:relative;
+  top:30px;
+}
+
+img
+{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.four_Prev{
+   font-size: 25px;
+	 text-align: right;
+	 position:absolute;
+	 top: 300px
+
+}
+
+.four_Next{
+	font-size: 25px;
+	text-align: right;
+	position:absolute;
+  top: 300px
+}
+
+/*6p.html 시작 (5p는 없음)*/
+
+.six_grid_down{
+	display: grid;
+	grid-template-columns: 0.7fr 0.3fr;
+	position:relative;
+  top:30px;
+}
